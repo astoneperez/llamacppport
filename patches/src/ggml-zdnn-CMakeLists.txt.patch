@@ -1,0 +1,9 @@
+diff --git a/ggml/src/ggml-zdnn/CMakeLists.txt b/ggml/src/ggml-zdnn/CMakeLists.txt
+index 0a723ce4d..6a3616f24 100644
+--- a/ggml/src/ggml-zdnn/CMakeLists.txt
++++ b/ggml/src/ggml-zdnn/CMakeLists.txt
+@@ -34,3 +34,4 @@ target_include_directories(ggml-zdnn PRIVATE ${ZDNN_INCLUDE})
+ target_link_directories(ggml-zdnn PRIVATE ${ZDNN_LIB})
+ 
+ target_compile_definitions(ggml-zdnn PRIVATE GGML_USE_ZDNN)
++target_compile_options(ggml-zdnn PRIVATE -fshort-enums)
